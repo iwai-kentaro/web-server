@@ -26,7 +26,8 @@ app.post("/api/v1/quiz", function(req,res){
 //     age: 34,
 //   })
 // })
-
-app.listen(4000, function(){
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, function(){
     console.log("I am running");
 })
+
